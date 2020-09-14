@@ -2,7 +2,8 @@ pragma solidity ^0.6.0;
 
 // SPDX-License-Identifier: MIT
 
-import "./SafeMath.sol";
+import "./ezMath.sol";
+import "./openzeppelin/contracts/token/ERC20/IERC20.sol";
 
 /**
     @title Bare-bones Token implementation
@@ -11,7 +12,7 @@ import "./SafeMath.sol";
  */
 contract Token {
 
-    using SafeMath for uint256;
+    using ezMath for uint256;
 
     string public symbol;
     string public name;
